@@ -60,11 +60,9 @@ console.log(`Mi nombre es ${nombre} ${apellido} y tengo ${edad} años y la respu
 
 //TALLER 5 - TALLER 5 - TALLER 5 - TALLER 5 - TALLER 5 -
 //CREAR 3 VARIABLES Y REALIZAR LAS SIGUIENTES OPERACIONES. (a*b)/c, (b+c)*a Y  .(a/b)-(a+c)
-//REALICE UN CÓDIGO DONDE SE USE MÓDULO
-//Según el código investigue si es posible realizar un incremento de más de una unidad. Si es posible realice un código de demostración.
-//Realice un código que realice una tabla de verdad de AND y OR dadas dos variables booleanas.
 
-let a = 5;
+
+/*let a = 5;
 let b = 6;
 let c = 7;
 
@@ -76,4 +74,77 @@ console.log(ejercicio1);
 console.log(ejercicio2);
 console.log(ejercicio3);
 
-//MODULO: IMPRIMA EL RESIDUO DE 
+//REALICE UN CÓDIGO DONDE SE USE MÓDULO
+let modulo = a%b;
+console.log(modulo);*/
+
+//Según el código investigue si es posible realizar un incremento de más de una unidad. Si es posible realice un código de demostración.
+/* 
+    console.log(modulo+=2);
+*/
+
+//Realice un código que realice una tabla de verdad de AND y OR dadas dos variables booleanas.
+
+
+//TALLER 6  -TALLER 6 - TALLER 6  -TALLER 6 - TALLER 6  -TALLER 6 - TALLER 6  -TALLER 6 - 
+
+//r haga un código que dados tres números, evalúe cual es el número mayor. Imprimalos en consola ordenados.
+
+/*let numero1 = 10;
+let numero2 = 12;
+let numero3 = 15;
+
+let mayor, medio, menor;
+
+if (numero3>numero1 && numero2<numero3){
+    console.log("el número", numero3, "es mayor que el número", numero1, "y el número", numero2);
+}*/
+
+//Haga un código que evalúe si un número es par o impar
+
+/*Realice un código que resuelva el siguiente planeamiento:
+a. Una tienda comenzó una oferta para ventas al
+i.20% Para compras mayores a 10 docenas.
+ii.15% Para compras mayores o iguales a 5 docenas.
+iii.10% Para compras mayores a 1 docena.
+Se desea determinar cuál es descuento dado una cantidad de decenas que se van a
+comprar. Imprima tambien cual es el valor de la compra si cada docena cuesta 60.000*/
+
+
+//CLASE 19 DE ABRIL POO
+/*haga un código que:
+a. Tenga un objeto carro con las siguientes propiedades:
+i.Marca.
+ii.Modelo.
+iii.Año.
+iv.Color.
+b. Agregue al objeto carro la función de descripción en la cual imprima lo siguiente:
+“Hola! Mi marca es marca, soy modelo modelo año y mi color es color”
+c. Imprima por consola cada una de las propiedades y funciones.*/
+
+class Carro{
+   constructor(marca, modelo, year, color,){
+        this.marca= marca;
+        this.modelo = modelo;
+        this.year = year;
+        this.color= color;
+   }
+
+       
+        imprimir(){
+            return console.log("Hola! Mi marca es " + this.marca + " ,soy modelo " + this.modelo + " el año " + this.year + " y mi color es " + this.color);
+        }
+    };
+     const carro = new Carro("fiat", "2007", "2007", "naranja");
+    return carro.imprimir();
+
+
+
+//CLASE 26 DE ABRIL // PROGRAMACIÓN AVANZADA II
+/*const email = "naty@gmail.com";
+const email2 ="holi";
+const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const validarEmail1 = regex.test(email);
+const validarEmail2 = regex.test(email2);
+console.log(validarEmail1);
+console.log(validarEmail2);*/
