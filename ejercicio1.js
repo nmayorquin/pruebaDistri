@@ -121,7 +121,7 @@ iv.Color.
 b. Agregue al objeto carro la función de descripción en la cual imprima lo siguiente:
 “Hola! Mi marca es marca, soy modelo modelo año y mi color es color”
 c. Imprima por consola cada una de las propiedades y funciones.*/
-
+/*
 class Carro{
    constructor(marca, modelo, year, color,){
         this.marca= marca;
@@ -132,11 +132,14 @@ class Carro{
 
        
         imprimir(){
-            return console.log("Hola! Mi marca es " + this.marca + " ,soy modelo " + this.modelo + " el año " + this.year + " y mi color es " + this.color);
+            return console.log("Hola! Mi marca es " + this.marca + " ,soy modelo " + this.modelo + " el año" + this.year + " y mi color es " + this.color);
         }
     };
      const carro = new Carro("fiat", "2007", "2007", "naranja");
     return carro.imprimir();
+*/
+
+//CLASE 20 DE ABRIL 
 
 
 
@@ -148,3 +151,143 @@ const validarEmail1 = regex.test(email);
 const validarEmail2 = regex.test(email2);
 console.log(validarEmail1);
 console.log(validarEmail2);*/
+
+
+//CLASE 27 DE ABRIL DE OBJETO A JSON-DE ------- JSON A OBJETO
+
+//TALLER 1   TALLER 1 TALLER 1 TALLER 1 TALLER 1
+/*haga un JSON información que contenga la siguiente información:
+1. Nombre
+2. Apellido
+3. Edad
+4. Hobbies guardados en un arreglo.
+5. Objeto Contacto con la siguiente información:
+1. Correo
+2. Objeto Teléfono
+1.Teléfono celular
+2.Teléfono fijo.
+3. Dirección*/
+
+/*const datosJson={
+    "name": "nata",
+    "lastName": "mayor",
+    "age": 39,
+    "hobbies": ["patinar", "programar", "caminar con perros"],
+    "contacto": {
+        "tel": 123456,
+        "email": "naty@gmail.com,"
+    },
+    "telefono": {
+        "celular": 57123456,
+        "fijo": 601123456,
+        "adress": "cll pepito con carrera pepito",
+    }
+}
+*/
+/*Realice un JSON para el siguiente planteamiento:
+En una tienda se tienen productos de aseo, alimentos y bebidas. Cada producto vendido en la tienda cuenta con las siguientes propiedades:
+a. Nombre
+b. Marca
+c. Valor
+1. Valor de compra
+2. Valor de venta
+d. Tipo (aseo, alimento, bebida)
+e. Inventario
+Para los siguientes productos crear un fichero JSON que represente esta información relativa a los productos que ofrece la tienda.
+a. Arroz, Diana
+b. Jabon, Ariel
+c. Detergente, Suavitel
+d. Gaseosa, Coca-Cola
+e. Aceite, Gourmet
+f. Galletas, Festival
+g. Cerveza, Poker
+h. Crema dental, Colgate*/
+
+
+const tienda={
+    "comida":[{
+        objeto1:{
+            "name": "arroz",
+            "marca": "diana",
+            "valor": 2000,
+            "valorCompra": 1500,
+            "valorVenta": 2500,
+            "tipo": "alimento",
+            "inventario":10,
+        },
+        objeto2:{
+            "name": "aceite",
+            "marca": "Gourmet",
+            "valor": 5000,
+            "valorCompra": 4500,
+            "valorVenta": 6000,
+            "tipo": "alimento",
+            "inventario":5
+        },
+        objeto3:{
+            "name": "galletas",
+            "marca": "festival",
+            "valor": 1000,
+            "valorCompra": 500,
+            "valorVenta": 200,
+            "tipo": "alimento",
+            "inventario":4
+        }
+    }],
+    "aseo":[{
+        objeto1:{
+            "name": "jabón",
+            "marca": "ariel",
+            "valor": 10000,
+            "valorCompra": 8000,
+            "valorVenta": 13000,
+            "tipo": "aseo",
+            "inventario":2,
+        },
+        objeto2:{
+            "name": "detergente",
+            "marca": "suavitel",
+            "valor": 5000,
+            "valorCompra": 4500,
+            "valorVenta": 6000,
+            "tipo": "aseo",
+            "inventario":5
+        },
+        objeto3:{
+            "name": "crema dental",
+            "marca": "colgate",
+            "valor": 1500,
+            "valorCompra": 1000,
+            "valorVenta": 3000,
+            "tipo": "aseo",
+            "inventario":2
+        }
+    }],
+    
+    "bebida":[{
+        objeto1:{
+            "name": "gaseosa",
+            "marca": "coca-cola",
+            "valor": 5000,
+            "valorCompra": 4000,
+            "valorVenta": 6000,
+            "tipo": "bebida",
+            "inventario":10,
+        },
+        objeto2:{
+            "name": "cerveza",
+            "marca": "poker",
+            "valor": 3000,
+            "valorCompra": 2000,
+            "valorVenta": 5000,
+            "tipo": "bebida",
+            "inventario":5
+        }
+    }],
+}
+
+console.log(tienda)
+console.log(tienda.aseo)
+console.log(tienda.bebida)
+console.log(tienda.comida)
+//TALLER 2   TALLER 2 TALLER 2 TALLER 2 TALLER 2
